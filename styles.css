@@ -5,7 +5,7 @@ body {
   height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-image: url("https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535205869/profile_photo.jpg");
+  background-image: url('https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535205869/profile_photo.jpg');
   background-position: left top;
   background-size: cover;
 }
@@ -21,7 +21,7 @@ body {
 .profile__content {
   font-family: 'Montserrat', sans-serif;
   margin-left: 10vw;
-  margin-top: 10vh;
+  margin-top: 8vh;
   color: white;
 }
 
