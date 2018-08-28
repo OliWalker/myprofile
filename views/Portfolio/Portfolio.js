@@ -11,7 +11,7 @@ const Portfolio = () => (
       {`
         .portfolio {
           width: 100vw;
-          height: 1000vh;
+          height: 279vh;
         }
         h1 {
           padding-left: 3vw;

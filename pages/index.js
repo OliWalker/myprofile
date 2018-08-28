@@ -3,14 +3,23 @@ import React from 'react';
 import NextHead from 'next/head';
 import Portfolio from '../views/Portfolio/Portfolio';
 import Navbar from '../components/Navbar';
+import Skills from '../views/Skills/Skills';
 
 const Index = () => {
   return (
     <div className="Index">
-      <NextHead />
+      <NextHead>
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+          crossorigin="anonymous"
+        />
+      </NextHead>
       <LandingPage />
       <Navbar />
       <Portfolio />
+      <Skills />
       <style jsx global>
         {`
           @import url('https://fonts.googleapis.com/css?family=Montserrat');

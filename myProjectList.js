@@ -21,7 +21,7 @@ module.exports = {
     imgUrl:
       'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535129728/mobis2.png',
     keyFeatures1:
-      'Free Your Stuff is a progressive web app that enables people to efficiently and easily upload there unwanted items up for the public to take.',
+      'Free Your Stuff is a progressive web app that enables people to efficiently and easily upload their unwanted items up for the public to take.',
     keyFeatures2:
       'It allows for very fast uploading and automatic "tagging" with image recognition technology',
     techStack: ['React', 'Redux', 'Koa', 'Mongo Db']
