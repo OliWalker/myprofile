@@ -3,6 +3,7 @@ module.exports = {
     backgroundColor: { backgroundColor: '#32639c' },
     logoUrl:
       'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535398102/Versus-logo.png',
+    logoStyle: { height: '6vw', width: '13vw' },
     tagLine: 'connecting casual atheletes.',
     imgUrl:
       'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535401356/versusMockupbetter.png',

@@ -2,7 +2,7 @@ const Project = props => {
   return (
     <div className="project" style={props.project.backgroundColor}>
       <div className="project__content">
-        <div />
+        <div style={props.project.logoStyle} />
         <span>{props.project.tagLine}</span>
       </div>
       <img className="project__carasel" src={props.project.imgUrl} />
