@@ -1,3 +1,5 @@
+import Carouselpics from '../../components/Carousel';
+
 const Project = props => {
   return (
     <div className="project" style={props.project.backgroundColor}>
@@ -5,7 +7,10 @@ const Project = props => {
         <div style={props.project.logoStyle} />
         <span>{props.project.tagLine}</span>
       </div>
-      <img className="project__carasel" src={props.project.imgUrl} />
+      <div className="carousel">
+        <Carouselpics />
+      </div>
+      {/* <img className="project__carasel" src={props.project.imgUrl} /> */}
       <div className="project__content__two">
         <div className="left">
           <span>Key features</span>
@@ -45,11 +50,12 @@ const Project = props => {
             margin-left: 4vw;
             font-size: 2rem;
           }
-          .project__carasel {
-            width: 37vw;
-            height: 55vh;
-            background-size: cover;
+          .carousel {
+            background-color: black;
+            width: 55vw;
+            height: 45vh;
           }
+
           .project__content__two {
             width: 40vw;
             display: flex;

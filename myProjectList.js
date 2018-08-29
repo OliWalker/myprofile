@@ -12,22 +12,22 @@ module.exports = {
     keyFeatures2:
       'Also included - performance visualisation so you can see your progress over time.',
     techStack: ['React', 'Redux', 'Koa', 'Maria Db']
-  },
-  freeYourStuff: {
-    backgroundColor: { backgroundColor: '#94E293' },
-    logoUrl:
-      'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535125076/LogoBigo2.png',
-    tagLine: 'give a gift a day',
-    imgUrl:
-      'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535129728/mobis2.png',
-    keyFeatures1:
-      'Free Your Stuff is a progressive web app that enables people to efficiently and easily upload their unwanted items up for the public to take.',
-    keyFeatures2:
-      'It allows for very fast uploading and automatic "tagging" with image recognition technology',
-    techStack: ['React', 'Redux', 'Koa', 'Mongo Db']
-  },
-  deed: {
-    backgroundColor: { backgroundColor: '#aec6cf' },
-    techStack: ['Angular', 'GraphQl', 'Mongo Db']
   }
+  // freeYourStuff: {
+  //   backgroundColor: { backgroundColor: '#94E293' },
+  //   logoUrl:
+  //     'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535125076/LogoBigo2.png',
+  //   tagLine: 'give a gift a day',
+  //   imgUrl:
+  //     'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535129728/mobis2.png',
+  //   keyFeatures1:
+  //     'Free Your Stuff is a progressive web app that enables people to efficiently and easily upload their unwanted items up for the public to take.',
+  //   keyFeatures2:
+  //     'It allows for very fast uploading and automatic "tagging" with image recognition technology',
+  //   techStack: ['React', 'Redux', 'Koa', 'Mongo Db']
+  // },
+  // deed: {
+  //   backgroundColor: { backgroundColor: '#aec6cf' },
+  //   techStack: ['Angular', 'GraphQl', 'Mongo Db']
+  // }
 };

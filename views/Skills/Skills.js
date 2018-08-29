@@ -83,13 +83,13 @@ const Skills = () => (
       .skillList {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 50vw;
         background-color: rgba(9, 9, 9);
       }
       .skill {
         padding: 10px 15px;
-        margin: 10px;
+        margin: 4px;
         color: black;
         background-color: rgba(255, 255, 255, 1.5);
         font-size: 1.5rem;

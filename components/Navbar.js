@@ -19,7 +19,8 @@ const Navbar = () => (
           z-index: 10;
         }
         button {
-          border: 1px solid white;
+          font-weight: bold;
+          border: none;
           padding: 5px 10px;
           color: white;
           background-color: rgba(9, 9, 9);
