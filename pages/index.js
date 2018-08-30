@@ -44,6 +44,13 @@ const Index = () => {
             box-sizing: border-box;
             font-family: Montserrat, sans-serif;
           }
+          *:focus {
+            outline: none;
+          }
+          a {
+            text-decoration: none;
+            color: white;
+          }
         `}
       </style>
     </div>

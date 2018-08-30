@@ -8,9 +8,8 @@ const Project = props => {
         <span>{props.project.tagLine}</span>
       </div>
       <div className="carousel">
-        <MyCarousel />
+        <MyCarousel pics={props.project.picLinks} />
       </div>
-      {/* <img className="project__carasel" src={props.project.imgUrl} /> */}
       <div className="project__content__two">
         <div className="left">
           <span>Key features</span>
@@ -52,7 +51,7 @@ const Project = props => {
           }
           .carousel {
             display: inline;
-            background-color: #2a5484;
+            background-color: ${props.project.innerColor};
             width: 55vw;
             height: 45vh;
           }
@@ -61,6 +60,7 @@ const Project = props => {
             width: 40vw;
             display: flex;
             justify-content: space-between;
+            margin-bottom: 2vh;
           }
           .project__content__two span {
             font-weight: bold;

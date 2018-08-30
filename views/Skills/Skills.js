@@ -1,4 +1,5 @@
 import helpers from '../../helpers/functions';
+import Link from 'next/link';
 
 const skillList = helpers.shuffle([
   'JS',
@@ -57,10 +58,16 @@ const Skills = () => (
       <div className="section3">
         <h1> get in touch</h1>
         <div className="icons">
-          <i className="fab fa-linkedin" />
-          <i className="fab fa-github-square" />
+          <a href="https://linkedin.com/in/oli-walker/">
+            <i className="fab fa-linkedin" />
+          </a>
+          <a href="https://github.com/oliwalker">
+            <i className="fab fa-github-square" />
+          </a>
         </div>
-        <span>Say: Hi@OliWalker.me</span>
+        <a href="mailto:oliwalker@protonmail.com">
+          <span>Say: Hi@OliWalker.me</span>
+        </a>
       </div>
     </div>
     <style jsx>{`
