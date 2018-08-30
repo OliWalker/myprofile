@@ -1,4 +1,4 @@
-import Carouselpics from '../../components/Carousel';
+import MyCarousel from '../../components/Carousel';
 
 const Project = props => {
   return (
@@ -8,7 +8,7 @@ const Project = props => {
         <span>{props.project.tagLine}</span>
       </div>
       <div className="carousel">
-        <Carouselpics />
+        <MyCarousel />
       </div>
       {/* <img className="project__carasel" src={props.project.imgUrl} /> */}
       <div className="project__content__two">
@@ -51,7 +51,8 @@ const Project = props => {
             font-size: 2rem;
           }
           .carousel {
-            background-color: black;
+            display: inline;
+            background-color: #2a5484;
             width: 55vw;
             height: 45vh;
           }
