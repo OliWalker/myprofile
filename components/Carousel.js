@@ -4,12 +4,39 @@ import Slider from 'react-slick';
 export default class MyCarousel extends React.Component {
   render() {
     const settings = {
-      dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      swipeToSlide: true
+      swipeToSlide: true,
+      centerMode: true,
+      centerPadding: 0
+      // responsive: [
+      //   {
+      //     breakpoint: 1024,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1,
+      //       infinite: true,
+      //       dots: true
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 600,
+      //     settings: {
+      //       slidesToShow: 2,
+      //       slidesToScroll: 2,
+      //       initialSlide: 2
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 480,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1
+      //     }
+      //   }
+      // ]
     };
     return (
       <Slider {...settings}>
@@ -24,14 +51,15 @@ export default class MyCarousel extends React.Component {
         <style jsx>
           {`
             div {
-              display: flex;
+              display: none;
               justify-content: center;
               align-items: center;
               text-align: center;
+              width: 100%;
             }
             img {
-              width: 25vw;
-              margin-left: 15vw;
+              height: 47vh;
+              margin: 0 auto;
             }
           `}
         </style>
