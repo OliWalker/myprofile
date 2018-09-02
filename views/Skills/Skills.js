@@ -116,7 +116,7 @@ const Skills = () => (
       }
 
       .section3 {
-        height: 25vh;
+        max-height: 25vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -124,6 +124,16 @@ const Skills = () => (
       i {
         font-size: 2.5rem;
         margin: 5px;
+      }
+      @media (max-width: 1000px) {
+        .skillList {
+          width: 60vw;
+        }
+      }
+      @media (max-width: 800px) {
+        .skillList {
+          width: 80vw;
+        }
       }
     `}</style>
   </div>

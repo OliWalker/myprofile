@@ -19,6 +19,13 @@ const Index = () => {
           rel="stylesheet"
           type="text/css"
           charset="UTF-8"
+          href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+        />
+
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charset="UTF-8"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
         <link
@@ -36,6 +43,7 @@ const Index = () => {
           @import url('https://fonts.googleapis.com/css?family=Montserrat');
           body {
             margin: 0;
+            overflowx: hidden;
           }
           body::-webkit-scrollbar {
             display: none;

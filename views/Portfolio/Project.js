@@ -34,7 +34,7 @@ const Project = props => {
             height: 94vh;
           }
           .project__content {
-            width: 40vw;
+            min-width: 40vw;
             display: flex;
             align-items: center;
           }
@@ -74,6 +74,17 @@ const Project = props => {
           }
           li {
             list-style: none;
+          }
+          @media (max-width: 1000px) {
+            .project__content {
+              width: 70vw;
+            }
+            .carousel {
+              width: 90vw;
+            }
+            .project__content__two {
+              width: 70vw;
+            }
           }
         `}
       </style>
