@@ -39,7 +39,8 @@ module.exports = {
       'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535559541/localhost_3000_add_Pixel_2__pixel_very_silver_portrait.png',
       'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535559542/localhost_3000__Pixel_2_2__pixel_very_silver_portrait.png',
       'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535559542/localhost_3000__Pixel_2_3__pixel_very_silver_portrait.png'
-    ]
+    ],
+    demo: 'https://freeyourstuff.oliwalker.me'
   },
   deed: {
     backgroundColor: { backgroundColor: '#aec6cf' },
