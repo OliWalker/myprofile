@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 
 export default class MyCarousel extends React.Component {
   demo = url => {
-    const windowFeatures = 'resizeable=no, height=731, width=411';
+    const windowFeatures = 'resizable=0, height=731, width=411';
     window.open(url, 'some name', windowFeatures);
   };
 
@@ -45,7 +45,7 @@ export default class MyCarousel extends React.Component {
               margin: 0 auto;
             }
             h1 {
-              margin-top: 20%;
+              margin-top: 10%;
             }
             button {
               margin-top: 10%;

@@ -19,7 +19,8 @@ module.exports = {
       'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535643683/sports_pixel_quite_black_portrait.png',
       'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535643683/challenge_pixel_quite_black_portrait.png',
       'https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535643683/league_pixel_quite_black_portrait.png'
-    ]
+    ],
+    demo: 'https://versus.oliwalker.me'
   },
   freeYourStuff: {
     backgroundColor: { backgroundColor: '#94E293' },
