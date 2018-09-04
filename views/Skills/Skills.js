@@ -34,23 +34,23 @@ const Skills = () => (
       </div>
 
       <div className="section2">
-        <h1>git status</h1>
+        <h1>git status Sep.</h1>
         <div className="gitDetailList">
           <div className="gitter">
             <h2>Repos</h2>
-            <h1>4</h1>
+            <h1>5</h1>
           </div>
           <div className="gitter">
             <h2>Pull Requests</h2>
-            <h1>18</h1>
+            <h1>3</h1>
           </div>
           <div className="gitter">
             <h2>Commits</h2>
-            <h1>82</h1>
+            <h1>8</h1>
           </div>
           <div className="gitter">
             <h2>Insertions</h2>
-            <h1>25,683</h1>
+            <h1>1,387</h1>
           </div>
         </div>
       </div>

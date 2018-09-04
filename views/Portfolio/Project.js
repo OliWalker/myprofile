@@ -8,7 +8,7 @@ const Project = props => {
         <span>{props.project.tagLine}</span>
       </div>
       <div className="carousel">
-        <MyCarousel pics={props.project.picLinks} />
+        <MyCarousel pics={props.project.picLinks} demo={props.project.demo} />
       </div>
       <div className="project__content__two">
         <div className="left">
