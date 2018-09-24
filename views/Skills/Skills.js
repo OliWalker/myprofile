@@ -25,32 +25,29 @@ const Skills = () => (
   <div className="skills">
     <div className="skills__contents">
       <div className="section">
-        <h1>skilled in</h1>
+        <h2>skilled in</h2>
         <div className="skillList">
           {skillList.map(el => (
-            <span className="skill">{el}</span>
+            <span className="skill" key={el}>
+              {el}
+            </span>
           ))}
         </div>
       </div>
 
       <div className="section2">
-        <h1>git status Sep.</h1>
+        <h2>currently working for</h2>
         <div className="gitDetailList">
           <div className="gitter">
-            <h2>Repos</h2>
-            <h1>5</h1>
+            <a href="www.aktek.io">
+              <h1 className="Aktek">www.Aktek.io</h1>
+            </a>
           </div>
           <div className="gitter">
-            <h2>Pull Requests</h2>
-            <h1>3</h1>
+            <h2>as a</h2>
           </div>
           <div className="gitter">
-            <h2>Commits</h2>
-            <h1>8</h1>
-          </div>
-          <div className="gitter">
-            <h2>Insertions</h2>
-            <h1>1,387</h1>
+            <h1>Front End Developer</h1>
           </div>
         </div>
       </div>
@@ -85,6 +82,9 @@ const Skills = () => (
         background-color: rgba(9, 9, 9);
         text-align: center;
         height: 94vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
       }
 
       .skillList {
@@ -112,7 +112,19 @@ const Skills = () => (
       .gitDetailList {
         background-color: rgba(9, 9, 9);
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .Aktek {
+        font-size: 2.5rem;
+        transition: transform 0.2s ease-in-out;
+        text-decoration: underline;
+      }
+
+      .Aktek:hover {
+        transform: scale(1.1);
       }
 
       .section3 {
@@ -120,17 +132,30 @@ const Skills = () => (
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-bottom: 4vh;
       }
+
       i {
         font-size: 2.5rem;
         margin: 5px;
       }
+
+      .icons {
+        margin-bottom: 2vh;
+      }
+
       @media (max-width: 1000px) {
+        .skills__contents {
+          width: 70vw;
+        }
         .skillList {
-          width: 60vw;
+          width: 70vw;
         }
       }
       @media (max-width: 800px) {
+        .skills__contents {
+          width: 80vw;
+        }
         .skillList {
           width: 80vw;
         }

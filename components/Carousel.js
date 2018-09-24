@@ -15,12 +15,13 @@ export default class MyCarousel extends React.Component {
       slidesToScroll: 1,
       swipeToSlide: true,
       centerMode: true,
-      centerPadding: 0
+      centerPadding: 0,
+      touchMove: true
     };
     return (
       <Slider {...settings}>
         {this.props.pics.map(el => (
-          <div>
+          <div key={el}>
             <img src={el} />
           </div>
         ))}

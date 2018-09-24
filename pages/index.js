@@ -9,6 +9,8 @@ const Index = () => {
   return (
     <div className="Index">
       <NextHead>
+        <link rel="shortcut icon" type="image/x-icon" href="./../favicon.png" />
+
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
