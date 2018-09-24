@@ -39,7 +39,7 @@ const Skills = () => (
         <h2>currently working for</h2>
         <div className="gitDetailList">
           <div className="gitter">
-            <a href="www.aktek.io">
+            <a href="https://aktek.io/">
               <h1 className="Aktek">www.Aktek.io</h1>
             </a>
           </div>
