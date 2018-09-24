@@ -4,7 +4,7 @@ import myProjectList from '../../myProjectList';
 const Portfolio = () => (
   <div className="portfolio">
     {Object.values(myProjectList).map(project => (
-      <Project project={project} />
+      <Project project={project} key={Object.keys(project)} />
     ))}
 
     <style jsx>

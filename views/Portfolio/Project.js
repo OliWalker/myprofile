@@ -19,7 +19,7 @@ const Project = props => {
         <div className="right">
           <span>Tech-Stack</span>
           {props.project.techStack.map(el => (
-            <p>{el}</p>
+            <p key={el}>{el}</p>
           ))}
         </div>
       </div>

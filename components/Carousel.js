@@ -20,7 +20,7 @@ export default class MyCarousel extends React.Component {
     return (
       <Slider {...settings}>
         {this.props.pics.map(el => (
-          <div>
+          <div key={el}>
             <img src={el} />
           </div>
         ))}
