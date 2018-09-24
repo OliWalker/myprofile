@@ -120,6 +120,7 @@ const Skills = () => (
       .Aktek {
         font-size: 2.5rem;
         transition: transform 0.2s ease-in-out;
+        text-decoration: underline;
       }
 
       .Aktek:hover {
@@ -138,12 +139,23 @@ const Skills = () => (
         font-size: 2.5rem;
         margin: 5px;
       }
+
+      .icons {
+        margin-bottom: 2vh;
+      }
+
       @media (max-width: 1000px) {
+        .skills__contents {
+          width: 70vw;
+        }
         .skillList {
-          width: 60vw;
+          width: 70vw;
         }
       }
       @media (max-width: 800px) {
+        .skills__contents {
+          width: 80vw;
+        }
         .skillList {
           width: 80vw;
         }

@@ -15,7 +15,8 @@ export default class MyCarousel extends React.Component {
       slidesToScroll: 1,
       swipeToSlide: true,
       centerMode: true,
-      centerPadding: 0
+      centerPadding: 0,
+      touchMove: true
     };
     return (
       <Slider {...settings}>
