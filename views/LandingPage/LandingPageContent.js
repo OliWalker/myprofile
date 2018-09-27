@@ -15,7 +15,6 @@ const LandingPageContent = () => (
           position: absolute;
           z-index: 2;
         }
-
         h1 {
           font-size: 5rem;
         }
