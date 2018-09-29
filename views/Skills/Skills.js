@@ -78,6 +78,10 @@ const Skills = () => (
         flex-direction: column;
         align-items: center;
       }
+
+      .section {
+        height: 30vh;
+      }
       .skills__contents {
         background-color: rgba(9, 9, 9);
         text-align: center;
@@ -102,6 +106,9 @@ const Skills = () => (
         font-size: 1.5rem;
         display: inline;
         border-radius: 10px;
+      }
+      .section2 {
+        height: 29vh;
       }
 
       .section2,
