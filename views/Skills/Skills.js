@@ -39,7 +39,7 @@ const Skills = () => (
         <h2>currently working for</h2>
         <div className="gitDetailList">
           <div className="gitter">
-            <a href="https://aktek.io/">
+            <a href="https://www.youtube.com/watch?v=AkOLBdTrWfg">
               <h1 className="Aktek">www.Aktek.io</h1>
             </a>
           </div>
@@ -77,25 +77,27 @@ const Skills = () => (
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
       }
 
-      .section {
-        height: 30vh;
-      }
       .skills__contents {
         background-color: rgba(9, 9, 9);
         text-align: center;
         height: 94vh;
+        width: 50vw;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+      }
+
+      .section {
+        height: 31vh;
       }
 
       .skillList {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 50vw;
         background-color: rgba(9, 9, 9);
       }
       .skill {
@@ -108,7 +110,7 @@ const Skills = () => (
         border-radius: 10px;
       }
       .section2 {
-        height: 29vh;
+        height: 38vh;
       }
 
       .section2,
@@ -135,11 +137,11 @@ const Skills = () => (
       }
 
       .section3 {
-        max-height: 25vh;
+        height: 25vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: 4vh;
+        padding-bottom: 4vh;
       }
 
       i {
@@ -153,18 +155,7 @@ const Skills = () => (
 
       @media (max-width: 1000px) {
         .skills__contents {
-          width: 70vw;
-        }
-        .skillList {
-          width: 70vw;
-        }
-      }
-      @media (max-width: 800px) {
-        .skills__contents {
-          width: 80vw;
-        }
-        .skillList {
-          width: 80vw;
+          width: 75vw;
         }
       }
     `}</style>
