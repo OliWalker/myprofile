@@ -1,13 +1,37 @@
+import { Spring } from 'react-spring'
+
 const LandingPageContent = () => (
   <div className="LandingPageContent">
     <div>
-      <h1>Hi!</h1>
-      <h2>I'm Oli.</h2>
+      <Spring 
+        from={{opacity:0, transform: 'translateX(-100px)'}}
+        to={{opacity: 1, transform: 'translateX(0)'}}
+        delay={1000}>
+        {props =>
+          <h1 style={props}>Hi!</h1>
+        }
+      </Spring>
+
+      <Spring
+        from={{opacity:0, transform: 'translateX(-100px)' }}
+        to={{opacity: 1, transform: 'translateX(0)'}}
+        delay={1500}>
+        {props =>
+          <h2 style={props}>I'm Oli.</h2>
+        }
+      </Spring>
     </div>
-    <p>
-      I am a Full Stack developer <br />
-      building all things JavaScript.
-    </p>
+    <Spring
+      from={{opacity:0, transform: 'translateX(-100px)' }}
+      to={{opacity:1, transform: 'translateX(0)'}}
+      delay={2000}>
+      {props =>
+        <p style={props}>
+          I am a Full Stack developer <br />
+          building all things JavaScript.
+        </p>
+      }
+    </Spring>
     <style jsx>
       {`
         .LandingPageContent {
