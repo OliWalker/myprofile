@@ -14,6 +14,7 @@ class Portfolio extends React.PureComponent {
           {`
             .portfolio {
               width: 100vw;
+              overflowX: hidden;
               height: ${Object.keys(myProjectList).length * 94}vh;
             }
             h1 {
