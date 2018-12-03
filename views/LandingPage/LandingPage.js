@@ -8,7 +8,7 @@ const LandingPage = () => (
         .landingPage {
           width: 100vw;
           height: 100vh;
-          background-image: url('https://res.cloudinary.com/dh9xnvxbz/image/upload/v1535205869/profile_photo.jpg');
+          background-image: url('https://res.cloudinary.com/dh9xnvxbz/image/upload/q_70/v1535205869/profile_photo.jpg');
           background-position: right bottom;
           background-size: cover;
           position: relative;
