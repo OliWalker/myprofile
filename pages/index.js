@@ -40,7 +40,10 @@ class Index extends React.Component {
     const { title, project, skills} = this.state;
     return (
       <div className="Index">
-        <Meta title={title}/>      
+        <Meta title={title}/>
+        <button className='downButton' onClick={() => window.scrollTo({left:0, top:window.innerHeight, behavior: 'smooth'})}>
+          <i className="fas fa-chevron-circle-down" />
+        </button>
         <LandingPage />
         <Navbar />
         <Portfolio projectNumber={project-1}/>
@@ -65,6 +68,37 @@ class Index extends React.Component {
             a {
               text-decoration: none;
               color: white;
+            }
+            .index {
+              position: relative;
+            }
+            .downButton {
+              position: absolute;
+              z-Index: 5;
+              top: 87vh;
+              left: 50vw;
+              font-size: 5rem;
+              opacity: .5;
+              border: none;
+              background: none;
+              animation: pulse 5s infinite;
+            }
+            @keyframes pulse {
+              0% {
+                transform: scale(1)
+              }
+              25% {
+                transform: scale(1.1)
+              }
+              50% {
+                transform: scale(1) translateY(0px);
+              }
+              75% {
+                transform:translateY(10px)
+              }
+              100%{
+                transform: translateY(0px);
+              }
             }
           `}
         </style>
