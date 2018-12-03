@@ -82,7 +82,7 @@ class Project extends React.PureComponent {
           {`
             .project {
               display: flex;
-              overflowX: hidden;
+              overflow-x: hidden;
               flex-direction: column;
               align-items: center;
               justify-content: space-evenly;
