@@ -32,6 +32,7 @@ const LandingPageContent = () => (
         </p>
       }
     </Spring>
+    
     <style jsx>
       {`
         .LandingPageContent {
@@ -59,6 +60,20 @@ const LandingPageContent = () => (
           }
           .LandingPageContent p {
             padding-top: 11vh;
+          }
+        }
+        @media (max-device-width: 480px) {
+          .LandingPageContent {
+            padding-top: 2vh;
+          }
+          h1 {
+            font-size: 7rem;
+          }
+          h2 {
+            font-size: 5rem;
+          }
+          p {
+            font-size: 3rem;
           }
         }
       `}

@@ -1,8 +1,10 @@
 import LandingPageContent from './LandingPageContent';
+import LandingPageButtons from './LandingPageButtons';
 
 const LandingPage = () => (
   <div className="landingPage">
     <LandingPageContent />
+    <LandingPageButtons />
     <style jsx>
       {`
         .landingPage {
