@@ -190,6 +190,10 @@ class Skills extends React.PureComponent {
             margin-bottom: 2vh;
           }
 
+          .icons a {
+            font-size: 40px;
+          }
+
           @media (max-width: 1300px) {
             .skills__contents {
               width: 65vw;

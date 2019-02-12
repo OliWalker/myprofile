@@ -84,6 +84,7 @@ class Index extends React.Component {
             }
             *:focus {
               outline: none;
+              box-shadow: 0px 0px 9px 6px rgba(155,159,199,1);
             }
             a {
               text-decoration: none;
