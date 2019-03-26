@@ -24,12 +24,12 @@ class Skills extends React.PureComponent {
   render() {
     const { animate } = this.props
     if (!animate) return (
-      <div style={{height:'94vh', width: '100vw', backgroundColor: 'rgba(30, 30, 30)'}}>
+      <div style={{height:'94vh', width: '100vw', backgroundColor: 'rgba(30, 30, 30)'}} tabIndex="0">
         <div style={{backgroundColor: 'rgba(9, 9, 9)', height: '94vh', width: '50vw', marginLeft: '25vw'}}/>
       </div>
     )
     return (
-      <div className="skills">
+      <div className="skills" tabIndex="0">
         <div className="skills__contents">
           <div className="section">
             <Spring
@@ -63,7 +63,7 @@ class Skills extends React.PureComponent {
               <h2>currently working for</h2>
               <div className="gitDetailList">
                 <div className="gitter">
-                  <a href="https://www.youtube.com/watch?v=AkOLBdTrWfg">
+                  <a href="https://www.youtube.com/watch?v=AkOLBdTrWfg" className="gitter__link">
                     <h1 className="Aktek">www.Aktek.io</h1>
                   </a>
                 </div>
@@ -162,6 +162,10 @@ class Skills extends React.PureComponent {
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+          }
+
+          .gitter__link {
+            display: block;
           }
 
           .Aktek {

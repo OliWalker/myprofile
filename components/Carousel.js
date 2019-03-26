@@ -25,12 +25,12 @@ export default class MyCarousel extends React.Component {
             <img src={el} />
           </div>
         ))}
-        {this.props.demo ? (
+        {this.props.demo && (
           <div>
             <h1>Want to try?</h1>
-            <button onClick={() => this.demo(this.props.demo)}>Yes!</button>
+            <button tabIndex="-1" onClick={() => this.demo(this.props.demo)}>Yes!</button>
           </div>
-        ) : null}
+        )}
 
         <style jsx>
           {`

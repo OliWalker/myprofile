@@ -53,6 +53,7 @@ class Index extends React.Component {
     return (
       <div className="Index">
         <Meta title={title} />
+        <LandingPage />
         <button
           className="downButton"
           onClick={() =>
@@ -64,7 +65,6 @@ class Index extends React.Component {
           }>
           <i className="fas fa-chevron-circle-down" />
         </button>
-        <LandingPage />
         <Navbar />
         <Portfolio projectNumber={project - 1} />
         <Skills animate={skills} />

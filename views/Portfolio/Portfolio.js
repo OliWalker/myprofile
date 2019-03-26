@@ -6,7 +6,7 @@ class Portfolio extends React.PureComponent {
   render(){
     const { projectNumber } = this.props
     return (
-      <div className="portfolio">
+      <div className="portfolio" tabIndex="0">
         {Object.values(myProjectList).map((project, i) => (
           <Project project={project} projectNumber={projectNumber} key={Object.keys(project)} i={i} />
         ))}
