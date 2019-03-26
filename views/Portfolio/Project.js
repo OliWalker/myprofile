@@ -7,9 +7,9 @@ class Project extends React.PureComponent {
   render() {
     const { project, projectNumber, i} = this.props
     const animate = projectNumber >= i
-    if (!animate) return <div className="project" style={{height: '91vh', width: '100vw',...project.backgroundColor}} />
+    if (!animate) return <div className="project" tabIndex="0" style={{height: '91vh', width: '100vw',...project.backgroundColor}} />
     return (
-      <div className="project" style={project.backgroundColor}>
+      <div className="project" style={project.backgroundColor} tabIndex="0">
         <div className="project__content">
         <Spring 
           key={project.logoStyle}
