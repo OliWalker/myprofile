@@ -6,7 +6,10 @@ export const Portfolio = () => {
   return (
     <section id="portfolio">
       {Object.keys(myProjectList).map(project => (
-        <Project project={myProjectList[project]} key={project.name} />
+        <Project
+          project={myProjectList[project]}
+          key={myProjectList[project].name}
+        />
       ))}
       <style jsx>{``}</style>
     </section>

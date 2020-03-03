@@ -9,12 +9,12 @@ export const Meta = ({ title }) => {
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       />
       <link
         rel="stylesheet"
         type="text/css"
-        charset="UTF-8"
+        charSet="UTF-8"
         href=" https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
       />
       <link

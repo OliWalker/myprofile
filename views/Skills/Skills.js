@@ -27,7 +27,9 @@ const Skills = () => {
           <h2>skilled in</h2>
           <div className="skillList">
             {skillList.map(skill => (
-              <span className="skill">{skill}</span>
+              <span className="skill" key={skill}>
+                {skill}
+              </span>
             ))}
           </div>
         </div>
