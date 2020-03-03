@@ -8,7 +8,7 @@ const LandingPage = () => (
         building all things JavaScript.
       </p>
 
-      <button onClick={() => window.open("/static/cv.pdf", "_blank")}>
+      <button onClick={() => window.open("/cv.pdf", "_blank")}>
         Curriculum
       </button>
     </div>

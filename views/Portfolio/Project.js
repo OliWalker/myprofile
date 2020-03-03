@@ -35,7 +35,6 @@ export const Project = ({ project }) => {
             align-items: center;
             justify-content: space-evenly;
             color: white;
-            height: 94vh;
           }
           .project__content {
             min-width: 40vw;
@@ -51,7 +50,7 @@ export const Project = ({ project }) => {
           }
           .project__content span {
             margin-left: 4vw;
-            font-size: 2rem;
+            font-size: 24px;
           }
           .carousel {
             display: inline;
@@ -63,18 +62,25 @@ export const Project = ({ project }) => {
           .project__content__two {
             width: 40vw;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
             margin-bottom: 2vh;
           }
+
+          @media (min-width: 500px) {
+            .project__content__two {
+              flex-direction: row;
+            }
+          }
           .project__content__two span {
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 20px;
           }
           .left {
             width: 60%;
           }
           .right p {
-            line-height: 0.5rem;
+            line-height: 0.5px;
           }
           li {
             list-style: none;
@@ -95,7 +101,7 @@ export const Project = ({ project }) => {
               width: 70%;
             }
             .project__content span {
-              font-size: 3rem;
+              font-size: 32px;
               text-align: center;
             }
             .project__content__two {
@@ -103,10 +109,10 @@ export const Project = ({ project }) => {
             }
             .project__content__two span {
               font-weight: bold;
-              font-size: 2.4rem;
+              font-size: 28px;
             }
             .project__content__two p {
-              font-size: 1.8rem;
+              font-size: 20px;
             }
           }
         `}

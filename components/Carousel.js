@@ -1,10 +1,10 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React from "react";
+import Slider from "react-slick";
 
 export default class MyCarousel extends React.Component {
   demo = url => {
-    const windowFeatures = 'resizable=0, height=731, width=411';
-    window.open(url, 'name', windowFeatures);
+    const windowFeatures = "resizable=0, height=731, width=411";
+    window.open(url, "name", windowFeatures);
   };
 
   render() {
@@ -28,7 +28,9 @@ export default class MyCarousel extends React.Component {
         {this.props.demo && (
           <div>
             <h1>Want to try?</h1>
-            <button tabIndex="-1" onClick={() => this.demo(this.props.demo)}>Yes!</button>
+            <button tabIndex="-1" onClick={() => this.demo(this.props.demo)}>
+              Yes!
+            </button>
           </div>
         )}
 
@@ -59,7 +61,7 @@ export default class MyCarousel extends React.Component {
               padding: 10px 15px;
               color: white;
               font-weight: bold;
-              font-size: 1.5rem;
+              font-size: 20px;
               box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
               transition: all 0.3s ease 0s;
             }

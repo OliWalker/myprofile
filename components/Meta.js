@@ -4,7 +4,7 @@ export const Meta = ({ title }) => {
   return (
     <Head>
       <title>{title || "Oli Walker"}</title>
-      <link rel="shortcut icon" type="image/x-icon" href="public/favicon.png" />
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
       <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"

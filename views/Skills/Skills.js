@@ -65,7 +65,6 @@ const Skills = () => {
         .skills {
           width: 100vw;
           background-color: rgba(30, 30, 30);
-          z-index: 200;
           color: white;
           display: flex;
           flex-direction: column;
@@ -81,22 +80,19 @@ const Skills = () => {
           justify-content: space-evenly;
         }
 
-        .section {
-          height: 31vh;
-        }
-
         .skillList {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
           background-color: rgba(9, 9, 9);
         }
+
         .skill {
           padding: 10px 15px;
           margin: 4px;
           color: black;
           background-color: rgba(255, 255, 255, 1.5);
-          font-size: 1.5rem;
+          font-size: 16ox;
           display: inline;
           border-radius: 10px;
           transition: transform 0.2s ease-in-out;
@@ -127,7 +123,7 @@ const Skills = () => {
         }
 
         .Aktek {
-          font-size: 2.5rem;
+          font-size: 32px;
           transition: transform 0.2s ease-in-out;
           text-decoration: underline;
         }
@@ -136,7 +132,6 @@ const Skills = () => {
         }
 
         .section3 {
-          height: 25vh;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -144,7 +139,7 @@ const Skills = () => {
         }
 
         i {
-          font-size: 2.5rem;
+          font-size: 32px;
           margin: 5px;
         }
 
@@ -162,28 +157,28 @@ const Skills = () => {
           }
           .skill {
             padding: 8px 12px;
-            font-size: 1.3rem;
+            font-size: 14px;
           }
         }
         @media (max-device-width: 480px) {
           h1 {
-            font-size: 3rem;
+            font-size: 30px;
           }
           h2 {
-            font-size: 2.5rem;
+            font-size: 24px;
           }
           i {
-            font-size: 4rem;
+            font-size: 36px;
           }
           span {
-            font-size: 2rem;
+            font-size: 22px;
           }
           .skill {
             padding: 10px 14px;
-            font-size: 1.8rem;
+            font-size: 16px;
           }
           .Aktek {
-            font-size: 4rem;
+            font-size: 32px;
           }
         }
       `}</style>
