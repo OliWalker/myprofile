@@ -80,6 +80,7 @@ const Skills = () => {
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
+          max-width: 50vw;
         }
 
         .skillList {
