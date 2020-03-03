@@ -1,56 +1,15 @@
-import myProjectList from '../myProjectList';
 const skillsHeight = Object.keys(myProjectList).length + 1;
-import React from 'react'
-import { Spring } from 'react-spring';
+import myProjectList from "../myProjectList";
 
-const scrollFunctions = {
-  Home: () => window.scrollTo({left:0, top:0, behavior: 'smooth'}),
-  Portfolio: () => window.scrollTo({left:0, top:window.innerHeight, behavior: 'smooth'}),
-  Skills: () => window.scrollTo({left:0, top:window.innerHeight * skillsHeight, behavior:'smooth'})
-  }
-
-class Navbar extends React.Component{
-  state={
-    Home: false,
-    Portfolio: false,
-    Skills: false,
-  }
-
-  hoverState=(name)=>{
-      if (name==='clear') {
-        this.setState({ Home: false,
-        Portfolio: false,
-        Skills: false,})
-      } else {
-        this.setState({[name]: !this.state[name]})
-      }
-  }
-
-  render() {
-    return(
-      <div className="navbar">
-        { Object.keys(this.state).map(key => 
-          <Spring 
-            key={key}
-            from={{transform: 'skew(.312rad)'}}
-            to={{transform: 'skew(-.312rad)'}}
-          >
-            {props => 
-              <button
-                style={this.state[key] ? props : {}} 
-                name={key}
-                onMouseOver={(e)=>{this.hoverState(e.target.name)}}
-                onMouseLeave={() => this.hoverState('clear')}
-                onClick={scrollFunctions[key]}>
-                {key}
-              </button>
-            }
-          </Spring>
-        )}
-
-        <style jsx>
-          {`
-            .navbar {
+export const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <a href="#home">Home</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#skills">Skills</a>
+      <style jsx>
+        {`
+            nav {
               width: 100vw;
               height:6vh;
               background-color: rgb(9, 9, 9);
@@ -62,27 +21,18 @@ class Navbar extends React.Component{
               z-index: 10;
               padding-right: 5vw;
             }
-            button {
+            a {
               font-weight: bold;
               border: none;
               padding: 5px 10px;
               color: white;
               background-color: rgb(9, 9, 9);
-              font-size 1.5rem;
+              font-size 24px;
               border-radius: 2px;
               margin-right: 10px;
             }
-
-            @media (max-device-width: 480px){
-              button {
-                font-size: 2.6rem;
-              }
-            }
           `}
-        </style>
-      </div>
-    )
-  }
+      </style>
+    </nav>
+  );
 };
-
-export default Navbar;

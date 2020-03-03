@@ -13,11 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-css": "^0.2.0",
-    "next": "^6.1.1",
-    "npm": "^6.3.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-slick": "^0.23.1",
-    "react-spring": "^6.1.10"
+    "next": "9.2.2",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-slick": "0.25.2",
+    "react-spring": "6.1.10"
   }
 }
