@@ -1,85 +1,108 @@
-import React from 'react'
-import helpers from '../../helpers/functions';
-import { Spring, Trail } from 'react-spring';
+import React from "react";
+import helpers from "../../helpers/functions";
+import { Spring, Trail } from "react-spring";
 
 const skillList = helpers.shuffle([
-  'JS',
-  'React',
-  'Next',
-  'Koa',
-  'Redux',
-  'Angular',
-  'MongoDb',
-  'MySQL',
-  'Git',
-  'GraphQL',
-  'TypeScript',
-  'Express',
-  'Enzyme Testing',
-  'Mocha / Chai / Jest Testing',
-  'Apollo'
+  "JS",
+  "React",
+  "Next",
+  "Koa",
+  "Redux",
+  "Angular",
+  "MongoDb",
+  "MySQL",
+  "Git",
+  "GraphQL",
+  "TypeScript",
+  "Express",
+  "Enzyme Testing",
+  "Mocha / Chai / Jest Testing",
+  "Apollo"
 ]);
 
 class Skills extends React.PureComponent {
   render() {
-    const { animate } = this.props
-    if (!animate) return (
-      <div style={{height:'94vh', width: '100vw', backgroundColor: 'rgba(30, 30, 30)'}} tabIndex="0">
-        <div style={{backgroundColor: 'rgba(9, 9, 9)', height: '94vh', width: '50vw', marginLeft: '25vw'}}/>
-      </div>
-    )
+    const { animate } = this.props;
+    if (!animate)
+      return (
+        <div
+          style={{
+            height: "94vh",
+            width: "100vw",
+            backgroundColor: "rgba(30, 30, 30)"
+          }}
+          tabIndex="0"
+        >
+          <div
+            style={{
+              backgroundColor: "rgba(9, 9, 9)",
+              height: "94vh",
+              width: "50vw",
+              marginLeft: "25vw"
+            }}
+          />
+        </div>
+      );
     return (
       <div className="skills" tabIndex="0">
         <div className="skills__contents">
           <div className="section">
             <Spring
-              from={{transform:'translateY(-100px)'}}
-              to={{transform:'translateY(0px)'}}
-              delay={200}>
-              {props =>
-                <h2 style={props}>skilled in</h2>
-              }
+              from={{ transform: "translateY(-100px)" }}
+              to={{ transform: "translateY(0px)" }}
+              delay={200}
+            >
+              {props => <h2 style={props}>skilled in</h2>}
             </Spring>
             <div className="skillList">
               <Trail
-                items={skillList} keys={item => item}
-                from={{opacity: 0}}
-                to={{opacity: 1}}
+                items={skillList}
+                keys={item => item}
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
                 delay={500}
               >
-              {item => props => 
-                  <span className="skill" style={animate ? props : {}}>{item}</span>}
+                {item => props => (
+                  <span className="skill" style={animate ? props : {}}>
+                    {item}
+                  </span>
+                )}
               </Trail>
             </div>
           </div>
 
           <Spring
-            from={{transform: 'translateY(800px)', opacity:0}}
-            to={{transform:'translateY(0)', opacity:1}}
+            from={{ transform: "translateY(800px)", opacity: 0 }}
+            to={{ transform: "translateY(0)", opacity: 1 }}
             delay={2200}
           >
             {props => (
-            <div className="section2" style={props}>
-              <h2>currently working for</h2>
-              <div className="gitDetailList">
-                <div className="gitter">
-                  <a href="https://www.youtube.com/watch?v=AkOLBdTrWfg" className="gitter__link">
-                    <h1 className="Aktek">www.Aktek.io</h1>
-                  </a>
-                </div>
-                <div className="gitter">
-                  <h2>as a</h2>
-                </div>
-                <div className="gitter">
-                  <h1>Front End Developer</h1>
+              <div className="section2" style={props}>
+                <h2>currently working for</h2>
+                <div className="gitDetailList">
+                  <div className="gitter">
+                    <a
+                      href="https://ginetta.net/"
+                      target="_blank"
+                      className="gitter__link"
+                    >
+                      <h1 className="Aktek">Ginetta</h1>
+                    </a>
+                  </div>
+                  <div className="gitter">
+                    <h2>as a</h2>
+                  </div>
+                  <div className="gitter">
+                    <h1>Front End Developer</h1>
+                  </div>
                 </div>
               </div>
-            </div>)}
+            )}
           </Spring>
 
           <Spring
-            from={{transform: 'translateY(500px)', opacity:0}}
-            to={{transform:'translateY(0)', opacity:1}}
+            from={{ transform: "translateY(500px)", opacity: 0 }}
+            to={{ transform: "translateY(0)", opacity: 1 }}
             delay={3000}
           >
             {props => (
@@ -103,7 +126,6 @@ class Skills extends React.PureComponent {
         <style jsx>{`
           .skills {
             width: 100vw;
-            height: 94vh;
             background-color: rgba(30, 30, 30);
             z-index: 200;
             color: white;
@@ -116,7 +138,6 @@ class Skills extends React.PureComponent {
           .skills__contents {
             background-color: rgba(9, 9, 9);
             text-align: center;
-            height: 94vh;
             width: 50vw;
             display: flex;
             flex-direction: column;
@@ -218,7 +239,7 @@ class Skills extends React.PureComponent {
               font-size: 4rem;
             }
             span {
-              font-size: 2rem
+              font-size: 2rem;
             }
             .skill {
               padding: 10px 14px;
@@ -230,7 +251,7 @@ class Skills extends React.PureComponent {
           }
         `}</style>
       </div>
-    )
+    );
   }
 }
 

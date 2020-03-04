@@ -1,25 +1,25 @@
-import React from 'react';
-import LandingPage from '../views/LandingPage/LandingPage';
-import Portfolio from '../views/Portfolio/Portfolio';
-import Navbar from '../components/Navbar';
-import Skills from '../views/Skills/Skills';
-import Meta from '../components/Meta';
-import myProjectList from '../myProjectList';
+import React from "react";
+import LandingPage from "../views/LandingPage/LandingPage";
+import Portfolio from "../views/Portfolio/Portfolio";
+import Navbar from "../components/Navbar";
+import Skills from "../views/Skills/Skills";
+import Meta from "../components/Meta";
+import myProjectList from "../myProjectList";
 const skillsHeight = Object.keys(myProjectList).length;
 
 class Index extends React.Component {
   state = {
-    title: 'Oli Walker',
+    title: "Oli Walker",
     project: 0,
     skills: false
   };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.startAnimation);
+    window.addEventListener("scroll", this.startAnimation);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.startAnimation);
+    window.removeEventListener("scroll", this.startAnimation);
   }
 
   startAnimation = () => {
@@ -33,19 +33,19 @@ class Index extends React.Component {
     if (window.scrollY > window.innerHeight * (project + 0.5)) {
       this.setState({ project: (this.state.project += 1) });
     }
-    if (window.scrollY < window.innerHeight && title !== 'Oli Walker')
-      this.setState({ title: 'Oli Walker' });
+    if (window.scrollY < window.innerHeight && title !== "Oli Walker")
+      this.setState({ title: "Oli Walker" });
     else if (
       window.scrollY > window.innerHeight &&
       window.scrollY < window.innerHeight * skillsHeight &&
-      title !== 'Portfolio'
+      title !== "Portfolio"
     )
-      this.setState({ title: 'Portfolio' });
+      this.setState({ title: "Portfolio" });
     else if (
       window.scrollY > window.innerHeight * skillsHeight &&
-      title !== 'Skills'
+      title !== "Skills"
     )
-      this.setState({ title: 'Skills' });
+      this.setState({ title: "Skills" });
   };
 
   render() {
@@ -60,9 +60,10 @@ class Index extends React.Component {
             window.scrollTo({
               left: 0,
               top: window.innerHeight,
-              behavior: 'smooth'
+              behavior: "smooth"
             })
-          }>
+          }
+        >
           <i className="fas fa-chevron-circle-down" />
         </button>
         <Navbar />
@@ -70,11 +71,16 @@ class Index extends React.Component {
         <Skills animate={skills} />
         <style jsx global>
           {`
-            @import url('https://fonts.googleapis.com/css?family=Montserrat');
+            @import url("https://fonts.googleapis.com/css?family=Montserrat");
+            html {
+              font-size: 16px;
+            }
             body {
               margin: 0;
-              overflowx: hidden;
+              overflow-x: hidden;
+              min-width: 100vw;
             }
+
             body::-webkit-scrollbar {
               display: none;
             }
@@ -84,31 +90,28 @@ class Index extends React.Component {
             }
             *:focus {
               outline: none;
-              box-shadow: 0px 0px 9px 6px rgba(155,159,199,1);
+              box-shadow: 0px 0px 9px 6px rgba(155, 159, 199, 1);
             }
             a {
               text-decoration: none;
               color: white;
             }
-            .index {
-              position: relative;
-            }
+
             .downButton {
               position: absolute;
               z-index: 5;
-              top: 87vh;
-              left: 50vw;
               font-size: 5rem;
               opacity: 0.5;
               border: none;
               background: none;
               animation: pulse 5s infinite;
+              bottom: 3vh;
+              left: 50%;
+              transform: translate(-50%, -50%);
             }
             @media (max-device-width: 480px) {
               .downButton {
-                left: 79vw;
-                top: 87vh;
-                font-size: 9rem;
+                display: none;
               }
             }
 
