@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Aroov",
+    "imgSrc": "aroov.png",
+    "short": "Apartment application, quick and easy.",
+    "href": "https://aroov.ch",
+    "techStack": ["React", "Next", "Redux", "Apollo", "Styled-Components"],
+    "shadow": "#4cadd8"
+  },
+  {
+    "title": "Jurata",
+    "imgSrc": "jurata.png",
+    "short": "The right lawyer for every case.",
+    "href": "https://jurata.ch",
+    "techStack": ["React", "Next", "GraphQl", "Apollo", "Emotion", "Docz"],
+    "shadow": "#7476e5"
+  },
+  {
+    "title": "Fusion",
+    "imgSrc": "aktek.png",
+    "short": "Thrive in uncertainty.",
+    "href": "https://aktek.io",
+    "techStack": ["React", "Redux", "Data Visualization", "Start-up"],
+    "shadow": "#888888"
+  }
+]

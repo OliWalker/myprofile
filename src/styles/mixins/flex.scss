@@ -1,0 +1,43 @@
+@mixin flex($direction, $justify-content) {
+  display: flex;
+
+  @if $direction == "row" {
+    flex-direction: row;
+  } @else if $direction == "column" {
+    flex-direction: column;
+  }
+
+  @if $justify-content == "space-between" {
+    justify-content: space-between;
+  } @else if $justify-content == "space-evenly" {
+    justify-content: space-evenly;
+  } @else if $justify-content == "flex-start" {
+    justify-content: flex-start;
+  } @else if $justify-content == "center" {
+    justify-content: center;
+  }
+}
+
+@mixin stack($gap) {
+  @include flex("column", "flex-start");
+
+  & > * {
+    margin-top: $gap;
+  }
+
+  & > *:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin inline($gap) {
+  @include flex("row", "flex-start");
+
+  & > * {
+    margin-left: $gap;
+  }
+
+  & > *:first-child {
+    margin-left: 0;
+  }
+}
