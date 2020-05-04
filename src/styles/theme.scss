@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@700;800&display=swap");
+
+:root {
+  /* COLORS */
+  --primary1: #0044e7;
+  --primary2: #80a1f3;
+
+  --white: #eee;
+  --white1: #ddd;
+
+  --black0: #000;
+  --black1: #111;
+  --black2: #222;
+  --black3: #333;
+  --black4: #444;
+
+  --black8: #888;
+
+  /* FONTS */
+
+  --headingFont: "Open Sans", sans-serif;
+  --bodyFont: "Montserrat", sans-serif;
+
+  --fontSize1: 10px;
+  --fontSize2: 12px;
+  --fontSize3: 14px;
+  --fontSize4: 16px;
+  --fontSize5: 20px;
+  --fontSize6: 24px;
+  --fontSize7: 28px;
+  --fontSize8: 32px;
+  --fontSize9: 40px;
+  --fontSize10: 56px;
+  --fontSize11: 72px;
+
+  /* SPACINGS */
+
+  --spacings1: 2px;
+  --spacings2: 4px;
+  --spacings3: 8px;
+  --spacings4: 12px;
+  --spacings5: 16px;
+  --spacings6: 24px;
+  --spacings7: 32px;
+  --spacings8: 40px;
+  --spacings9: 56px;
+  --spacings10: 72px;
+  --spacings11: 88px;
+  --spacings12: 104px;
+
+  --max-content-width: 1080px;
+  --header-height: 62px;
+}
+
+@mixin screen($size) {
+  @if $size == "small" {
+    @media (min-width: 480px) {
+      @content;
+    }
+  } @else if $size == "medium" {
+    @media (min-width: 780px) {
+      @content;
+    }
+  } @else if $size == "large" {
+    @media (min-width: 990px) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin defaultTextStyles {
+  color: var(--white);
+}
+
+@mixin headers {
+  @include defaultTextStyles();
+  font-family: var(--headingFont);
+  font-weight: 700;
+}
+
+@mixin text {
+  @include defaultTextStyles();
+  font-family: var(--bodyFont);
+}
+
+.banner {
+  @include headers();
+  font-size: var(--fontSize9);
+  font-weight: 800;
+
+  @include screen("small") {
+    font-size: var(--fontSize10);
+  }
+
+  @include screen("medium") {
+    font-size: var(--fontSize11);
+  }
+}
+
+.heading1 {
+  @include headers();
+  font-size: var(--fontSize8);
+
+  @include screen("small") {
+    font-size: var(--fontSize9);
+  }
+
+  @include screen("medium") {
+    font-size: var(--fontSize10);
+  }
+}
+
+.heading2 {
+  @include headers();
+  font-size: var(--fontSize6);
+
+  @include screen("small") {
+    font-size: var(--fontSize7);
+  }
+
+  @include screen("medium") {
+    font-size: var(--fontSize8);
+  }
+}
+
+.heading3 {
+  @include headers();
+  font-size: var(--fontSize5);
+
+  @include screen("small") {
+    font-size: var(--fontSize6);
+  }
+
+  @include screen("medium") {
+    font-size: var(--fontSize7);
+  }
+}
+
+.text {
+  @include text();
+  font-size: var(--fontSize3);
+
+  @include screen("small") {
+    font-size: var(--fontSize4);
+  }
+
+  @include screen("medium") {
+    font-size: var(--fontSize5);
+  }
+}
+
+.textSmall {
+  @include text();
+  font-size: var(--fontSize3);
+
+  @include screen("medium") {
+    font-size: var(--fontSize4);
+  }
+}
+
+.textLarge {
+  @include text();
+  font-size: var(--fontSize5);
+}
+
+.textSecondary {
+  color: var(--black8);
+}
+
+.actionButton {
+  @include headers();
+  background: none;
+  border: 2px solid var(--white);
+  border-radius: 4px;
+  padding: 16px;
+  font-size: var(--fontSize8);
+  transition: all 0.2s ease-in;
+  height: fit-content;
+  box-shadow: 4px 4px var(--white);
+}
+
+.actionButton:hover {
+  transform: translate3d(2px, 2px, 0);
+  box-shadow: 2px 2px var(--white);
+}
