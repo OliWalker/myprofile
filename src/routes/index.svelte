@@ -72,17 +72,37 @@
       <p class="textLarge">Say hi back at:</p>
       <a href="mailto:oliwalker@pm.me" class="heading3">OliWalker@pm.me</a>
       <div>
-        <a href="https://linkedin.com/in/oli-walker/" aria-label="Linkedin">
+        <a
+          href="https://linkedin.com/in/oli-walker/"
+          aria-label="Linkedin"
+          target="_blank"
+          rel="noopener noreferrer">
           <Linkedin />
         </a>
-        <a href="https://github.com/oliwalker" aria-label="Github">
+        <a
+          href="https://github.com/oliwalker"
+          aria-label="Github"
+          target="_blank"
+          rel="noopener noreferrer">
           <Github />
         </a>
       </div>
     </div>
 
-    <button class="actionButton buttonSmall">C.V</button>
-    <button class="actionButton buttonLarge">Curriculum</button>
+    <a
+      href="Oliver_Walker_Cv.pdf"
+      class="actionButton buttonSmall"
+      target="_blank"
+      rel="noopener noreferrer">
+      C.V
+    </a>
+    <a
+      href="Oliver_Walker_Cv.pdf"
+      class="actionButton buttonLarge"
+      target="_blank"
+      rel="noopener noreferrer">
+      Curriculum
+    </a>
 
   </section>
 
