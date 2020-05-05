@@ -93,7 +93,8 @@
       href="Oliver_Walker_Cv.pdf"
       class="actionButton buttonSmall"
       target="_blank"
-      rel="noopener noreferrer">
+      rel="noopener noreferrer"
+      prefetch="false">
       C.V
     </a>
     <a
