@@ -47,7 +47,7 @@
     </div>
 
     <a
-      href="Oliver_Walker_CV.pdf"
+      href="Oli_Walker_CV.pdf"
       class="actionButton buttonSmall"
       target="_blank"
       rel="noopener noreferrer"
@@ -56,7 +56,7 @@
       C.V
     </a>
     <a
-      href="Oliver_Walker_CV.pdf"
+      href="Oli_Walker_CV.pdf"
       class="actionButton buttonLarge"
       target="_blank"
       rel="noopener noreferrer"
