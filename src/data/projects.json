@@ -1,26 +1,55 @@
-[
-  {
-    "title": "Aroov",
-    "imgSrc": "aroov.png",
-    "short": "Apartment application, quick and easy.",
-    "href": "https://aroov.ch",
-    "techStack": ["React", "Next", "Redux", "Apollo", "Styled-Components"],
-    "shadow": "#4cadd8"
-  },
-  {
-    "title": "Jurata",
-    "imgSrc": "jurata.png",
-    "short": "The right lawyer for every case.",
-    "href": "https://jurata.ch",
-    "techStack": ["React", "Next", "GraphQl", "Apollo", "Emotion", "Docz"],
-    "shadow": "#7476e5"
-  },
-  {
-    "title": "Fusion",
-    "imgSrc": "aktek.png",
-    "short": "Thrive in uncertainty.",
-    "href": "https://aktek.io",
-    "techStack": ["React", "Redux", "Data Visualization", "Start-up"],
-    "shadow": "#888888"
-  }
-]
+{
+	"work": [
+		{
+			"title": "Aroov",
+			"imgSrc": "aroov.png",
+			"short": "Apartment application, quick and easy.",
+			"href": "https://aroov.ch",
+			"techStack": [
+				"TypeScript",
+				"React",
+				"Next.js",
+				"Redux",
+				"Styled-Components",
+				"Node",
+				"GCP",
+				"Terraform"
+			],
+			"duties": [
+				"Architected, built & maintained 3 Next.js web apps",
+				"Refined circle ci pipeline to include nightly E2E tests",
+				"Refactored infrastructure to use Terraform on GCP",
+				"Created and maintained a design system based on figma"
+			],
+			"shadow": "#4cadd8"
+		},
+		{
+			"title": "Jurata",
+			"imgSrc": "jurata.png",
+			"short": "The right lawyer for every case.",
+			"href": "https://jurata.ch",
+			"techStack": ["TypeScript", "React", "Next.js", "GraphQl", "Apollo", "Emotion", "Docz"],
+			"duties": [
+				"Green field project rebuilding existing app",
+				"Custom Next.js server and redirect for SEO",
+				"Architected full i18n routing (before it was native)"
+			],
+			"shadow": "#7476e5"
+		},
+		{
+			"title": "Fusion",
+			"imgSrc": "aktek.png",
+			"short": "Thrive in uncertainty.",
+			"href": "https://aktek.io",
+			"techStack": ["React", "Redux", "Data Visualization", "Start-up"],
+			"duties": [
+				"Created new node networking graph using vis.js",
+				"Refactored data layer to Redux",
+				"Wrote internal document on Redux & best practices",
+				"Initiated code modernization/splitting halving bundle size"
+			],
+			"shadow": "#888888"
+		}
+	],
+	"personal": []
+}
