@@ -1,7 +1,8 @@
 .DS_Store
-/node_modules/
-/src/node_modules/@sapper/
-yarn-error.log
-/cypress/screenshots/
-/__sapper__/
-out/
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+dump.rdb
