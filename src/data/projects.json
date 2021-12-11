@@ -51,5 +51,32 @@
 			"shadow": "#888888"
 		}
 	],
-	"personal": []
+	"personal": [
+		{
+			"title": "Wall of Scientists",
+			"imgSrc": "wallofscientists.png",
+			"short": "Advocating diversity in STEM",
+			"href": "https://wallofscientists.com",
+			"techStack": ["SvelteKit", "Netlify", "html-pdf generation", "plausible"],
+			"duties": [
+				"Designed and developed the project",
+				"Set up configured CMS for use by non technical people",
+				"Development is ongoing and expanding"
+			],
+			"shadow": "#F2690D"
+		},
+		{
+			"title": "OurLife",
+			"imgSrc": "ourlife.png",
+			"short": "Personal blog recording adventures",
+			"techStack": ["Vue", "Node", "Serverless", "AWS", "dynamoDB", "sharp", "mapbox", "geojson"],
+			"duties": [
+				"Designed and developed the project",
+				"Fully hosted on AWS with serverless",
+				"Custom middleware to resize images on upload",
+				"GPX files uploaded and displayed via mapbox"
+			],
+			"shadow": "#0070f3"
+		}
+	]
 }

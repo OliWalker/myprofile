@@ -1,27 +1,34 @@
-[
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Gatsby",
-  "GraphQL",
-  "Redux",
-  "Jira",
-  "MongoDb",
-  "SQL",
-  "Git",
-  "Apollo",
-  "Express",
-  "Confluence",
-  "Jest",
-  "Cypress",
-  "Styled Components",
-  "Sass",
-  "Webpack",
-  "E2E testing",
-  "Vue",
-  "Svelte",
-  "Angular",
-  "JavaScript",
-  "HTML",
-  "CSS 3"
-]
+{
+	"Professional": {
+		"subtitle": "3+ years exp",
+		"skills": [
+			"TypeScript",
+			"React",
+			"Next.js",
+			"Jest",
+			"Cypress (E2E testing)",
+			"Styled Components",
+			"Storybook",
+			"Circle CI",
+			"Git",
+			"Scrum / Kanban"
+		]
+	},
+	"Secondary": {
+		"subtitle": "worked with",
+		"skills": ["Node", "Express", "PostGres", "Terraform", "GCP", "Python", "Django"]
+	},
+	"Personal": {
+		"subtitle": "project & tutorials",
+		"skills": [
+			"Vue",
+			"Svelte",
+			"AWS",
+			"Serverless",
+			"Mongo / Dynamo",
+			"Mapbox",
+			"Netlify",
+			"Vercel"
+		]
+	}
+}

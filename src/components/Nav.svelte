@@ -1,14 +1,33 @@
+<script>
+	import { page } from '$app/stores';
+</script>
+
 <header>
 	<nav>
 		<ul>
 			<li>
-				<a rel="prefetch" href="projects" class="heading3">Projects</a>
+				<a
+					rel="prefetch"
+					href="projects"
+					class="heading3 underlineGrower"
+					class:active={$page.path === '/projects'}>Projects</a
+				>
 			</li>
 			<li>
-				<a rel="prefetch" href="." class="heading3">Home</a>
+				<a
+					rel="prefetch"
+					href="."
+					class="heading3 underlineGrower"
+					class:active={$page.path === '/'}>Home</a
+				>
 			</li>
 			<li>
-				<a rel="prefetch" href="skills" class="heading3">Skills</a>
+				<a
+					rel="prefetch"
+					href="skills"
+					class="heading3 underlineGrower"
+					class:active={$page.path === '/skills'}>Skills</a
+				>
 			</li>
 		</ul>
 	</nav>
